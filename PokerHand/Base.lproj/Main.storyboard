@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PokerHand" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="poker background-1" highlightedImage="poker background-1" translatesAutoresizingMaskIntoConstraints="NO" id="ZJ2-1D-hIC">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="83" translatesAutoresizingMaskIntoConstraints="NO" id="BmI-Mo-PK2">
+                                <rect key="frame" x="29.5" y="244" width="355" height="438"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="svu-ah-4ef">
+                                        <rect key="frame" x="0.0" y="0.0" width="355" height="275"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="732" image="AH" translatesAutoresizingMaskIntoConstraints="NO" id="mjl-GT-AJT">
+                                                <rect key="frame" x="0.0" y="0.0" width="170" height="275"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="275" id="3dW-6r-LBQ"/>
+                                                    <constraint firstAttribute="width" constant="170" id="MwV-1g-Ith"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AS" translatesAutoresizingMaskIntoConstraints="NO" id="E1m-ve-wC4">
+                                                <rect key="frame" x="185" y="0.0" width="170" height="275"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="170" id="IUX-Qt-KJS"/>
+                                                    <constraint firstAttribute="height" constant="275" id="Q4v-Gy-hOJ"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KZN-gD-XgP">
+                                        <rect key="frame" x="81.5" y="358" width="192" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="juz-hH-d4X"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="75"/>
+                                        <state key="normal" title="Deal">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="dealButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8ji-Hv-owx"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Poker Hand Generator" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hgz-vl-5dn">
+                                <rect key="frame" x="59" y="89" width="296" height="102"/>
+                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="ZJ2-1D-hIC" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="3dz-Mb-cbn"/>
+                            <constraint firstItem="BmI-Mo-PK2" firstAttribute="top" secondItem="Hgz-vl-5dn" secondAttribute="bottom" constant="53" id="6el-AG-fiq"/>
+                            <constraint firstItem="Hgz-vl-5dn" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="45" id="M4q-PC-UZ6"/>
+                            <constraint firstItem="ZJ2-1D-hIC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="MlD-rB-d1b"/>
+                            <constraint firstAttribute="bottom" secondItem="ZJ2-1D-hIC" secondAttribute="bottom" id="MtL-gz-2Rn"/>
+                            <constraint firstItem="BmI-Mo-PK2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="200" id="Qaf-C1-YFh"/>
+                            <constraint firstItem="Hgz-vl-5dn" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="45" id="XZe-xb-scz"/>
+                            <constraint firstItem="Hgz-vl-5dn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dHI-qG-Kyx"/>
+                            <constraint firstItem="ZJ2-1D-hIC" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="fA2-al-Gfd"/>
+                            <constraint firstItem="BmI-Mo-PK2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pwR-Ot-6yd"/>
+                            <constraint firstItem="BmI-Mo-PK2" firstAttribute="top" secondItem="Hgz-vl-5dn" secondAttribute="bottom" constant="53" id="sDc-Hz-2Cf"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="leftCard" destination="mjl-GT-AJT" id="SRR-sA-McB"/>
+                        <outlet property="rightCard" destination="E1m-ve-wC4" id="sPR-NO-D2Z"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="91.741071428571431"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="AH" width="691" height="1056"/>
+        <image name="AS" width="691" height="1056"/>
+        <image name="poker background-1" width="450" height="300"/>
+    </resources>
+</document>
